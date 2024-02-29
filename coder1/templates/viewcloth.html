@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Clothes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='viewclothstyles.css') }}">
+</head>
+<body>
+    <header>
+        <br>
+        <div class="home-button-container">
+            <a href="/home" class="home-button">Home</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col top-section">
+            <h2>Tops</h2>
+            {% for top in tops %}
+            <div class="cloth">
+                <div class="image-container">
+                    <img src="data:image/png;base64,{{ top[1] }}" alt="Top">
+                </div>
+                <form action="/delete_cloth/top/{{ top[0] }}" method="POST">
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col bottom-section">
+            <h2>Bottoms</h2>
+            {% for bottom in bottoms %}
+            <div class="cloth">
+                <div class="image-container">
+                    <img src="data:image/jpeg;base64,{{ bottom[1] }}" alt="Bottom">
+                </div>
+                <form action="/delete_cloth/bottom/{{ bottom[0] }}" method="POST">
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col shoes-section">
+            <h2>Shoes</h2>
+            {% for shoe in shoes %}
+            <div class="cloth">
+                <div class="image-container">
+                    <img src="data:image/jpeg;base64,{{ shoe[1] }}" alt="Shoes">
+                </div>
+                <form action="/delete_cloth/shoes/{{ shoe[0] }}" method="POST">
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

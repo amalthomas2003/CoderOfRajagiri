@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload and Display</title>
+</head>
+<body>
+    <h1>Upload and Display Images</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="image_file">Select image to upload:</label>
+        <input type="file" name="image_file" id="image_file" required>
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+    <br>
+    <h2>Uploaded Images</h2>
+    {% if images %}
+        <ul>
+            {% for image in images %}
+                <li>
+                    <p>Image ID: {{ image[0] }}</p>
+                    <img src="data:image/png;base64,{{ image[1] }}" alt="Uploaded Image">
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No images uploaded yet.</p>
+    {% endif %}
+</body>
+</html>

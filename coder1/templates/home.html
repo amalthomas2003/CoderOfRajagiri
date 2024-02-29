@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Wardrobe</h1>
+        <div class="button-container">
+            <a href="/add_cloth" class="button">Add New Cloth</a>
+            <a href="/view_clothes" class="button">View Wardrobe</a>
+        </div>
+        <div class="button-container">
+            <a href="/choose_dress" class="button">Shuffle</a>
+            <a href="/lock_wardrobe" class="button">Lock Wardrobe</a>
+        </div>
+    </div>
+</body>
+</html>

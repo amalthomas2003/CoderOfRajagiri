@@ -1,0 +1,157 @@
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-section {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upload-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.upload-input {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.upload-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+.top-section {
+    background-image: url("https://img.freepik.com/free-vector/clothes-rail-neon-sign_1262-20732.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.bottom-section {
+    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/40/26/shorts-neon-sign-vector-27134026.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.shoes-section {
+    background-image: url("https://i.etsystatic.com/37485311/r/il/2dd191/4157363390/il_570xN.4157363390_bt09.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.upload-section {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.upload-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.upload-input {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.upload-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+#ut,
+#ub,
+#us {
+    font-size: 30px;
+    font-family: Arial, sans-serif; 
+    font-weight: bold; 
+    color: #fb0000; 
+    position: absolute;
+    top: 10px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px #333;
+}
+
+footer {
+    position: fixed;
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #050505; 
+    padding: 15px 0; 
+    text-align: center;
+    color:white;
+}
+
+.home-button-container {
+    display: inline-block; 
+}
+
+
+.home-button {
+    padding: 5px 20px; 
+    background-color: #fd0a0a; 
+    color: rgb(255, 255, 255); 
+    border: none;
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+
+
+.home-button:hover {
+    background-color: #a60707;
+    cursor: pointer; 
+}

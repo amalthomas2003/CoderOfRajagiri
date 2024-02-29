@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://w0.peakpx.com/wallpaper/357/347/HD-wallpaper-wall-board-lights-black-background-black-background.jpg'); /* Replace 'background.jpg' with your background image path */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cloth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cloth img {
+    width: 350px; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    box-shadow: 50px 50pxs 50px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.buttons form, .buttons a {
+    margin-right: 10px;
+}
+
+button, a {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    background-color: #45a049;
+}
+.cloth img:hover {
+    transform: scale(1.1);
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-weight: bold; 
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+button[type="submit"]:active {
+    animation: rotateAnimation 0.5s linear;
+}
+
+
+button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+.cloth img {
+    transition: transform 0.5s ease-in-out; 
+}

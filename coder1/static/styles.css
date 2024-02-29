@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    background-image: url('https://assets.telkitchens.co.uk/srcane/uploads/2021/07/12104046/Black-Wardrobe-Designs-8.jpg'); /* Replace 'background.jpg' with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Premium-looking font */
+    font-weight: bold; /* Make the font bold */
+    font-size: 50px; /* Set the font size to 50px */
+    color: white; /* Set the text color to white */
+    text-shadow: 2px 2px 4px rgba(255, 215, 0, 1); /* Add golden text shadow */
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 5px; /* Increase letter spacing */
+    -webkit-text-stroke: 1px gold; /* Add golden outline */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px; /* Increase padding to make the buttons bigger */
+    background-color: rgba(255, 255, 255, 0.7); /* Use RGBA color with an alpha value for translucency */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px; /* Increase font size */
+    border-radius: 10px; /* Increase border radius for rounded corners */
+    margin: 0 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: rgb(91, 75, 75); /* Darken the button color on hover */
+}
+h1 {
+    font-weight: bold; /* Make the font bold */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add padding for better appearance */
+}

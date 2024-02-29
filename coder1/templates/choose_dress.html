@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Dress</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='choose_dress_style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Today's Dress Combination - {{ date }}</h1>
+        <div class="cloth">
+            <img id="topImage" src="data:image/jpeg;base64,{{ top }}" alt="top">
+            <img id="bottomImage" src="data:image/jpeg;base64,{{ bottom }}" alt="bottom">
+            <img id="shoesImage" src="data:image/jpeg;base64,{{ shoes }}" alt="shoes">
+        </div>
+        <div class="buttons">
+            <form action="/reroll">
+                <button type="submit">Reroll</button>
+            </form>
+            <a href="/home">Home</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='rotateImages.js') }}"></script>
+</body>
+</html>
